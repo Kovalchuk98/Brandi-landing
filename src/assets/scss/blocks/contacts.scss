@@ -1,0 +1,76 @@
+@import "./scaffolding.scss";
+@import "./variables.scss";
+
+
+.contacts{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contacts__wrapper{
+    width: 280px;
+    margin: 0 auto;
+    padding: 0px 0px 20px 0px;
+}
+
+.contacts__adress{
+
+    .contacts__adress__title{
+        font-size: 20px;
+        font-weight: 500;
+        color: $text-color;
+    }
+    .contacts__adress__info{
+        font-weight: 400;
+        color: #6a737b;
+    }
+}
+
+.contacts__form{
+    input[type=text]{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 5px;
+        padding: 0px;
+        color: $text-color;
+    }
+ 
+    .submit__button{
+        display: flex;
+        justify-content: space-between;
+        width: 145px;
+        
+        cursor: pointer;
+
+        .submit__icon{
+            display: flex;
+            align-items: center;
+          
+        }
+
+        a{
+            font-weight: 400;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+
+.contacts__form__title{
+    font-size: 20px;
+    font-weight: 700;
+    color: $text-color;
+}
+
+.contacts__list__links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 36px;
+    padding: 0;
+    list-style-type: none;
+}
+
+

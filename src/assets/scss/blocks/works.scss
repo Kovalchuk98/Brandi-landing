@@ -1,0 +1,115 @@
+@import "./scaffolding.scss";
+@import "./variables.scss";
+
+.works{
+    margin-top: 15px;
+    width: 100%;
+    color: black;
+}
+
+.works__wrapper{
+    width: 280px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.works_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p{
+        font-weight: 600;
+        color: rgba(6, 32, 51, 0.8);
+    }
+}
+
+.works__list__filter{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    &:last-child{
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.works__item{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px 10px;
+    a{
+        color: $text-color; 
+        text-decoration: none;
+    }
+
+    &--active{
+        background-color: $main-color;
+        a{
+            color: white;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+ 
+}
+
+.work__slider {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    
+        .owl-item{
+          position: relative;
+      }
+      
+      .owl-stage{
+          height: auto;
+      }
+       .owl-dots{
+          display: block;
+          background-color: rgba(0, 0, 0, 0.2);
+          bottom:10px;
+          left: 50%;
+          outline: none;
+          background-color: red;
+      }
+      .owl-dot{
+          outline: none; 
+          height: 10px;
+          width: 10px;
+     
+      
+      }
+      // button{
+      //   background-color: red;
+      //   margin-right: 10px;
+      // }
+      
+      .owl-dot span{
+       
+           transform: rotate(45deg);
+           margin: 0;
+           padding: 0;
+           outline: none;
+           height: 10px;
+           width: 10px;
+           background-color: red;
+          
+      }
+     
+    
+    
+    }
+    
+    
+    // .owl-nav {
+    //   display: none;
+    // }

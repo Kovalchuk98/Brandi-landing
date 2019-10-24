@@ -1,0 +1,365 @@
+@import "../scaffolding.scss";
+@import "../variables.scss";
+
+
+
+.page-header{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background-color: #0f382b;
+  background-image: url('/src/assets/img/background1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+      // background-position: center -19px;
+
+}
+
+.header__logo{
+//   display: flex;
+//  justify-content: center;
+  // margin: 0 auto;
+  padding-top: 15px;
+  font-size: 28px;
+  font-family: "Pacifico";
+  color: white;
+  font-weight: 400;
+}
+
+.page-header__links{
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+  height: auto;
+  list-style-type: none;
+      .page-header__links__item{
+        margin-right: 20px;
+        #All_glyphs{
+          width: 18px;
+          height: 18px;
+          width: 18px;
+          height: 18px;
+          fill: white;
+          fill-rule: evenodd;
+          opacity: 0.3;
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+}
+
+.page-header__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // position: relative;
+  margin-top: 10px;
+  order: 1;
+  // padding: 0px;
+  // margin: 0px;
+  height: auto;
+  width: 100%;
+  
+
+  p{
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+  }
+  .content__word{
+    color: #0fda93;
+  }
+  .first__row{
+    font-size: 28px;
+  
+  }
+  .second__row{
+    font-size: 20px;
+  }
+  .third__row{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+   
+  }
+
+  .third__row__words{
+    &:before{
+    content: '';    
+    display: block;                
+    width:28px;    
+    height: 1px;                        
+    position: absolute;     
+    background-color: #0fda93;        
+    // border-bottom: 1px solid palevioletred;  
+    top: 50%;                    
+    left: -45px;   
+  }
+    &:after{
+        content: '';    
+        display: block;                
+        width:28px;    
+        height: 1px;                        
+        position: absolute;     
+        background-color: #0fda93;        
+        // border-bottom: 1px solid palevioletred;  
+        top: 50%;                    
+        right: -45px;  
+    }
+  } 
+}
+
+@media (max-width: $mobile-width-only) {
+  .background__images{
+    display: none;
+  }
+  .page-header__links{
+    display: none;
+  }
+}
+
+
+
+@media (min-width: $tablet-width) {
+
+.page-header{
+  display: flex;
+  position: relative;
+  height: auto;
+  width: 100%;
+  // background-image: none;
+}
+
+.background__images{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  order: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-nav{
+    display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.page-header__content{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+  .first__row{
+    font-size: 40px;
+  }
+  .second__row{
+    font-size: 30px;
+  }
+  .third__row{
+    font-size: 24px;
+  }
+}
+
+.page-header__links{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top: 300px;
+}
+// .header__items__wrapper{
+//   display: block;
+//   position: absolute;
+//   z-index: 1;
+//   width: 100%;
+//   margin: 0 auto;
+//   height: 100%;
+// }
+
+
+
+#main__slider{
+  display: flex;
+  // position: relative;
+  height: auto;
+
+    .owl-item{
+      pointer-events: none; 
+      // height: 100%;
+      // width: 100%;
+      // background-position: center;
+    }
+    .owl-dots{
+      display: flex;
+      // position: relative;
+      flex-direction: column;
+      justify-content: center;
+     align-content: center;
+      border: 1px solid red;
+      z-index: 3;
+     
+      // display: block;
+      // z-index: 2;
+      // align-items: center;
+      // width: 200px;
+      // padding: 0px;
+      margin:70px 20px 0px 0px;
+
+      button{
+        display: block;
+        // position: absolute;
+        margin:0px 0px 10px 0px;
+        padding: 0px;
+        
+        
+      }
+     
+    }
+    .owl-dot{
+      // align-items: center;
+      // margin: 0 auto;
+      // position: absolute;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      // margin-right: 20px;
+    
+      height: 10px;
+      // width: 10px;
+      // margin: 0 auto;
+      // &--active{
+      //   background-color: white;
+      // }
+
+
+    }
+    .active{
+      background-color: white;
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (min-width: $desktop-width) {
+
+//   .page-header{
+//     height: 800px;
+//   }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .page-header {
+//     display: flex;
+//     flex-direction: column;
+//     background-color: #000000;
+//     background-color: #0b3629;
+//     // background-image: url("/../../src/assets/img/texture.png");
+//     // background-repeat: no-repeat;
+//     background-size: cover;  
+//     background-position: center -39px;
+//   }
+  
+  // .page-header__logo {
+  //   height: 85px;
+    
+  //   text-align: center;
+  // }
+  
+  // .page-header__logo img {
+  //   width: 226px;
+  //   height: 85px;
+  // }
+
+  // .header__title{
+  //   text-align: center;
+  //   font-size: 25px;
+  //   font-family: "Pacifico";
+  //   color: white;
+    
+  // }
+
+//   @media (min-width: $tablet-width) {
+
+//     .page-header {
+//       background-color: #000000;
+//       height: 550px;
+//       background-color: #000000;
+//       background-image: url("/../../src/assets/img/background1.jpg");
+//       background-repeat: no-repeat;
+//       background-size: cover;  
+//       background-position: center 39px;
+//     }
+    
+  
+  
+//   @media (min-width: $desktop-width) {
+  
+//     .page-header__logo {
+//       height: 848px;
+  
+//       background-position: center 0;
+//       background-size: cover;
+//     }
+
+  
+//   }
+// }

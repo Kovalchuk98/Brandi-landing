@@ -1,0 +1,43 @@
+@import "./scaffolding.scss";
+@import "./variables.scss";
+
+
+.team{
+    margin-top: 25px;
+    width: 100%;
+}
+
+.team__wrapper{
+    width: 280px;
+    margin: 0 auto;
+    padding: 0px 0px 20px 0px;
+}
+.team__list{
+    padding: 0px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.team__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p{
+        font-weight: 600;
+        color: rgba(6, 32, 51, 0.8);
+    }
+}
+
+.team__item__wrapper__two{
+   
+    .team__item__title{      
+        padding: 15px 0px 10px 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    .team__description{
+        padding: 0px 0px 10px 0px;
+        margin: 0px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,80 @@
+@import "./scaffolding.scss";
+@import "./variables.scss";
+
+
+.features{
+    // margin-top: 15px;
+    width: 100%;
+    color: black;
+    // background-color: #f4f7f9;
+}
+
+.features__wrapper{
+    width: 280px;
+    margin: 0 auto;
+    padding: 15px 0px 20px 0px;
+}
+
+.features_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.slider{
+    margin: 34px auto 0px;
+    width: 320px;
+    padding: 0;
+}
+
+.slider__list{
+    
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.slider__item {
+    width: 280px;
+    margin: 0 auto;
+ 
+}
+.slider__image {
+   margin:  0 auto;
+   padding-top: 15px;
+   
+}
+
+.features__list{
+    list-style-type :none;
+}
+
+.features__item__wrapper{
+    margin-top: 10px;
+}
+.features__image__wrapper{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 27px;
+    border:2px solid $main-color;
+}
+
+.features__item__title{
+    color:$text-color;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    margin: 10px auto;
+}
+
+.features__description{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(6, 32, 51,0.7);
+}
+
